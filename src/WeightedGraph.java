@@ -1,4 +1,4 @@
-public class WeightedGraph<A> {
+public class WeightedGraph {
     static class Edge {
         String source;
         String destination;

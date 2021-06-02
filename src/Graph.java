@@ -69,7 +69,7 @@ public class Graph {
 
 
     // Implementing floyd warshall algorithm
-    int[][] floydWarshall(int graph[][]) {
+    public int[][] floydWarshall(int graph[][]) {
         int nV = trads.size();
         int m[][] = new int[nV][nV];
         int i, j, k;
@@ -107,7 +107,7 @@ public class Graph {
         }
     }
 
-    String getCenter(){
+    public String getCenter(){
         ArrayList<Integer> eccentricity = new ArrayList<>();
         int nV = trads.size();
         for (int i = 0; i < nV; ++i) {
@@ -140,5 +140,9 @@ public class Graph {
                 }
             }
         }
+    }
+
+    public int[][] getMatrix() {
+        return matrix;
     }
 }
